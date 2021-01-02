@@ -1,6 +1,6 @@
 let numWays = function(n, k) {
     if(!n || !k) return 0;
-    if(n == 1 || k) return k;
+    if(n == 1 && k) return k;
 
     diff = k * (k-1);
     same = k * 1;
