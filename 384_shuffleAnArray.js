@@ -8,18 +8,14 @@ Solution.prototype.reset = function() {
 };
 
 Solution.prototype.shuffle = function() {
-    // create a copy of this.nums, shuffle it, and return it
-    const shuffled = this.nums.slice();
-    const n = shuffled.length;
-    const swap = (arr, i, j) => {
-        let tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
-    }
+    let set = new Set()
+    let length = this.nums.length
+    let arr;
 
-    // swap elements with random elements
-    for (let i = 0; i < n; i++) 
-        swap(shuffled, i, Math.floor(Math.random() * n));
+    while (set.size < length) {
+        set.add(this.nums[Math.floor(Math.random() * length)])
+    }
+    arr = Array.from(set)
     
-    return shuffled;
+    return arr
 };
