@@ -14,9 +14,9 @@ var rob = function(nums) {
         let maxAtCurrent = Math.max(maxAtTwoBefore + nums[i], maxAtOneBefore);
 
         
-        maxATTwoBefore = maxAtOneBefore;
+        maxAtTwoBefore = maxAtOneBefore;
         maxOneBefore = maxAtCurrent;
     }
 
     return maxOneBefore;
-};
+}
