@@ -21,7 +21,7 @@ var countPrimes = function(n) {
         }
         
         count++
-        for (let j = i + i; j <= n; j += i) {
+        for (let j = i + i; j < n; j += i) {
             
             arr[j] = true;
         }
