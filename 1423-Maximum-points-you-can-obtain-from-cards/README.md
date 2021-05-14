@@ -34,7 +34,7 @@
 ```
 
 
-  [Link](https://leetcode.com/problems/count-primes/)
+  [Link](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/)
 
 ## _Solution_ 👇
 
