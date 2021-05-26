@@ -39,7 +39,7 @@ myHashSet.contains(2); // return False, (already removed)
   At most 104 calls will be made to add, remove, and contains.
 ```
 
-  [Link](https://leetcode.com/problems/design-parking-system/)
+  [Link](https://leetcode.com/problems/design-hashset/)
 
 ## _Solution_ 👇
 
